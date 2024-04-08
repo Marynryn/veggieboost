@@ -1,0 +1,204 @@
+.recall-loc {
+    max-width: 320px;
+    width: calc(100% - 40px);
+}
+
+.rec-section {
+  padding-top: 80px;
+}
+
+.recall-tittle {
+  color: var(--primary-dark-color);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  max-width: 315px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.recall-text {
+  color: var(--primary-dark-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  max-width: 321px;
+  width: 100%;
+  margin-bottom: 40px;
+  /* margin: 0 auto; */
+}
+
+.recall-form {
+  display: inline-flex;
+  justify-content: end;
+  margin-bottom: 40px;
+  width: 335px;
+  height: 48px;
+}
+
+.recall-label {
+  width: 100%;
+}
+.recall-input {
+  padding: 15px 0;
+  border-radius: 100px;
+  border: 1px solid #c1bdbd;
+  width: 260px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.recall-input::placeholder {
+  color: #c1bdbd;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+.recall-line {
+  display: flex;
+  justify-content: center;
+}
+.recall-btn {
+  border-radius: 100px;
+  background: var(--accent-color);
+  padding: 15px 35px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.recall-btn:hover,
+.recall-btn:focus {
+  background: var(--primary-green-color);
+}
+.recall-img {
+  border-radius: 40px;
+  background: var(--light-bg-color);
+  background-image: url(/img/recall/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* width: 335px;
+  height: 388px; */
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .recall-loc {
+  max-width: 375px;
+  width: calc(100% - 40px);
+  }
+  .recall-img {
+  width: 335px;
+  height: 388px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .recall-loc {
+    max-width: 768px;
+    width: calc(100% - 64px);
+}
+  .recall-tittle {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    max-width: 524px;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .recall-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    max-width: 499px;
+    text-align: center;
+    margin: auto;
+  }
+  .recall-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .recall-form {
+    width: 100%;
+    margin: 0;
+  }
+  .recall-img {
+    border-radius: 80px;
+    background-image: url(/img/recall/bg-tabl-m.png);
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    width: 704px;
+    height: 463px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .recall-loc {
+    max-width: 1280px;
+    width: calc(100% - 64px);
+    }
+  .recall-tittle {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -1.92px;
+    max-width: 614px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-right: 77px;
+    padding-bottom: 0;
+  }
+
+  .recall-text {
+    max-width: 523px;
+    margin-bottom: 80px;
+    margin-left: inherit;
+    padding-bottom: 0;
+    text-align: left;
+  }
+  .recall-desc {
+    display: inline-block;
+  }
+  .recall-line {
+    display: block;
+    margin: 0;
+  }
+  .recall-img {
+    display: inline-flex;
+    background-image: url(/img/recall/bg-desc.png);
+    width: 525px;
+    height: 536px;
+    padding: 0;
+    margin: 0;
+  }
+  .recall-loc {
+    display: flex;
+    margin-top: 124px;
+    width: 1216px;
+    height: 536px;
+  }
+}

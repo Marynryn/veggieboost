@@ -1,0 +1,271 @@
+
+.garden-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*width: 100%;
+  max-width: 375px;
+  margin: auto;*/
+    width: calc(100% - 40px);
+    max-width: 320px;
+}
+
+.garden-cap {
+  /* max-width: 624px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.garden-title {
+  color: var(--primary-dark-color);
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+}
+.garden-text {
+  max-width: 332px;
+  color: var(--primary-dark-color);
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+.garden-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+.garden-list {
+  position: relative;
+  /* width: 335px; */
+  /* height: 443px; */
+  background-color: #eaf7e5;
+  border-radius: 10px;
+}
+
+.garden-list:nth-child(9) {
+  display: none;
+}
+
+.garden-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.garden-item-cup {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.garden-subtitle {
+  color: var(--primary-dark-color);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -1.28px;
+}
+.garden-list-text {
+  color: var(--primary-dark-color);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+}
+
+.garden-img {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.garden-price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: var(--primary-dark-color);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+
+.garden-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  /* padding-top: 40px; */
+}
+
+.garden-btn {
+  margin-top: 20px;
+  transform: rotate(-14deg);
+  width: 80px;
+  height: 80px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  border: var(--white);
+  color: var(--white);
+  color: var(--white);
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+
+.garden-btn:hover {
+  background-color: var(--primary-green-color);
+}
+
+.garden-btn-icon {
+  fill: var(--white);
+}
+
+@media screen and (min-width: 375px) {
+  .garden-container {
+    max-width: 375px;
+    width: calc(100% - 40px);
+  }
+  .garden-list {
+    width: 335px; 
+   height: 443px; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .garden-container {
+    max-width: 768px;
+    width: calc(100% - 64px);
+  }
+  .garden-btn-container {
+   width: calc(100% - 64px);
+  }
+
+  .garden-title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1.12px;
+  }
+
+  .garden-text {
+    max-width: 562px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  .garden-menu {
+    gap: 20px;
+    row-gap: 20px;
+  }
+
+  .garden-list {
+    width: 342px;
+    height: 465px;
+  }
+
+  .garden-item {
+    min-height: 80px;
+  }
+
+  .garden-item-cup {
+    margin-top: 64px;
+  }
+
+  .garden-img {
+    margin-left: 10px;
+    margin-right: 11px;
+  }
+
+  .garden-images {
+    transform: scale(1.1257);
+  }
+
+  .garden-price {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  .garden-btn {
+    width: 114px;
+    height: 114px;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .garden-container {
+    max-width: 1280px;
+    width: calc(100% - 64px);
+  }
+  
+  .garden-btn-container {
+   width: calc(100% - 64px);
+  }
+
+  .garden-title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+  }
+
+  .garden-menu {
+    gap: 24px;
+    row-gap: 24px;
+  }
+
+  .garden-list {
+    width: 389px;
+  }
+
+  .garden-list:nth-child(9) {
+    display: block;
+  }
+
+  .garden-img {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+}
