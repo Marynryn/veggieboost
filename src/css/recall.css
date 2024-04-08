@@ -1,6 +1,6 @@
 .recall-loc {
-    max-width: 320px;
-    width: calc(100% - 40px);
+  max-width: 320px;
+  width: calc(100% - 40px);
 }
 
 .rec-section {
@@ -99,12 +99,12 @@
 
 @media screen and (min-width: 375px) {
   .recall-loc {
-  max-width: 375px;
-  width: calc(100% - 40px);
+    max-width: 375px;
+    width: calc(100% - 40px);
   }
   .recall-img {
-  width: 335px;
-  height: 388px;
+    width: 335px;
+    height: 388px;
   }
 }
 
@@ -112,7 +112,7 @@
   .recall-loc {
     max-width: 768px;
     width: calc(100% - 64px);
-}
+  }
   .recall-tittle {
     font-size: 40px;
     line-height: 44px;
@@ -130,6 +130,7 @@
     max-width: 499px;
     text-align: center;
     margin: auto;
+    margin-bottom: 40px;
   }
   .recall-line {
     display: flex;
@@ -160,7 +161,7 @@
   .recall-loc {
     max-width: 1280px;
     width: calc(100% - 64px);
-    }
+  }
   .recall-tittle {
     font-size: 48px;
     font-weight: 500;

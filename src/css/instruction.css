@@ -1,16 +1,17 @@
 .instruction-container {
-  width: calc(100% - 40px);
   /* max-width: 320px; */
   border-radius: 40px;
   background-color: var(--light-bg-color);
   background-image: url(/img/instruction/bg-mobile-1x.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size:100%;
+  background-size: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column-reverse;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 250px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -21,7 +22,7 @@
   }
 }
 
-.instruction-img {
+.img-container {
   width: 258px;
   height: 319px;
   margin-left: auto;
@@ -34,14 +35,13 @@
   display: flex;
   flex-direction: column;
   padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
   margin: 0;
 }
 .instruction-title {
-  width: 295px;
+  /* width: 295px; */
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.16;
   letter-spacing: -0.06em;
   color: #141414;
@@ -58,7 +58,7 @@
   display: inline-flex;
   flex-direction: column;
   gap: 20px;
-  width: 275px;
+  width: 240px;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -106,7 +106,7 @@
   .instruction-container {
     width: calc(100% - 40px);
     /* max-width: 375px; */
-}
+  }
 }
 
 /*! -----------T-A-B-L-E-T------------- */
@@ -119,9 +119,9 @@
     margin-bottom: 101px;
   } */
   .instruction-container {
-    width: calc(100% - 64px);
-    /* max-width: 768px; */
-}
+    /* width: calc(100% - 64px); */
+    max-width: 704px;
+  }
 
   .instruction-container {
     flex-wrap: unset;
@@ -137,7 +137,14 @@
     /* width: 704px;
     height: 488px; */
   }
-
+  .red-girl {
+    width: 350px;
+    height: 446px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    object-position: bottom;
+  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -148,15 +155,14 @@
 
   .instruction-img {
     /* margin-top: 40px; */
-    margin-left: 0;
-    padding-top: 40px;
+
     width: 350px;
-    height: 446px;
+    height: 456px;
   }
 
   .instruction-text {
     /* margin: 80px 40px; */
-    width: 100%;
+    width: 274px;
     /* margin-top: 80px;
     margin-left: 40px; */
     padding: 80px 40px 80px 40px;
@@ -183,9 +189,8 @@
     margin-bottom: 124px;
   } */
   .instruction-container {
-    width: calc(100% - 64px);
-    /* max-width: 1280px; */
-}
+    max-width: 1280px;
+  }
   .instruction-container {
     border-radius: 80px;
     flex-wrap: unset;
@@ -200,6 +205,9 @@
     /* background-repeat: space; */
     /* width: 1216px;
     height: 460px; */
+  }
+  .red-girl {
+    height: 430px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
