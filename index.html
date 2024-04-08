@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/veggieboost/assets/favicon-e6e3cccc.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VeggieBoost</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script
+   defer
+   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+   crossorigin="anonymous"
+    ></script>
+    <!--Styles-->
+    
+    <script type="module" crossorigin src="/veggieboost/assets/index-4e90f58c.js"></script>
+    <link rel="stylesheet" href="/veggieboost/assets/index-78d46fcd.css">
+  </head>
+  <body>
+
+    <!--Marina-->
+    <header class="header">
+  <div class="header-container container">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#instruction" class="nav-link">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section-garden" class="nav-link">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a href="#footer" class="nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-logo">
+      <svg class="header-logo-icon" width="16" height="16">
+        <use href="/veggieboost/assets/icons-5a84b130.svg#icon-logo"></use>
+      </svg>
+      <a href="/index.html" class="nav-logo">veggieboost</a>
+    </div>  
+    <button class="icon-burger js-open-menu" type="button">
+      <svg class="burger" width="24" height="24">
+        <use href="/veggieboost/assets/icons-5a84b130.svg#icon-mobile-menu"></use>
+      </svg>
+    </button>
+    <button class="header-basket" data-modal1-open="" type="button">
+      <svg class="header-basket-icon" width="24" height="24">
+        <use href="/veggieboost/assets/icons-5a84b130.svg#icon-shopping-cart-1"></use>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="mobile-container js-menu-container js-close-menu">
+    <button type="button" class="mobile-close-btn js-close-menu">
+      <svg class="close-btn-icon" width="8" height="8">
+        <use href="/veggieboost/assets/icons-5a84b130.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="modal-mobile-nav">
+      <div class="header-logo-mob">
+        <svg class="header-logo-icon" width="16" height="16">
+          <use href="/veggieboost/assets/icons-5a84b130.svg#icon-logo"></use>
+        </svg>
+        <a href="/index.html" class="nav-logo">veggieboost</a>
+      </div>
+      <div class="modal-mob">
+      <ul class="modal-mobile-list">
+        <li class="modal-mobile-item">
+          <a href="#instruction" class="modal-mobile-link">How It Works</a>
+        </li>
+        <li class="modal-mobile-item">
+          <a href="#section-garden" class="modal-mobile-link">Vegetables</a>
+        </li>
+        <li class="modal-mobile-item">
+          <a href="#footer" class="modal-mobile-link">Contacts</a>
+        </li>
+      </ul>
+      <button class="header-basket-m" data-modal2-open="" type="button">
+        <svg class="header-basket-mob" width="24" height="24">
+          <use href="/veggieboost/assets/icons-5a84b130.svg#icon-shopping-cart"></use>
+        </svg>
+      </button></div>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+
+      <!--Andrii H-->
+      <section class="hero">
+  <div class="hero-container container">
+    <div class="hero-first-wrapper">
+      <div class="hero-reviews">
+        <img
+          class="hero-reviews-photo1"
+          srcset="data:image/webp;base64,UklGRtYDAABXRUJQVlA4WAoAAAAQAAAAQQAAQQAAQUxQSC4BAAABkFTbbiRJH4IhCIIhJARDCCadDGwGDgZRTAxBEARBi5hs/Z6WETEBmC9bPYa6u+s4asmI/qnmr7WXQPLLfLJ2iSHdl3ZZl6ov77KomAfUbUWqHrSmaTI8rMqkrB5YZUo2D215gpgHt/xK1MOrvEjqhCM9q05ZH21OWh6Isli6605bb8SJ5aoz9Qtxajl1ru9JuQxAcfIP0NkaoGyG7PRS+LbG1w6+n8E3lE/9v6Hy6eAbB99P42sbXxG+DGNToLF14MNWABiXAsCXq5+ES07YmTouhUmu0Hg6bpOxqNyhsGx42jgaHqfBoOkZROOp4G22aCZ4ny2WZcwUjaQZc0XjDMHs1KK0hIWbRrCCtbKvawnLZV/TBSFl11n2FcQtu76z9kH0XNox9KTjaJtgPlZQOCCCAgAAcAwAnQEqQgBCAD6RRptLJaOiIaKYDICwEgljBlgC1MKhnWua28HPgJHNIHW3d8sW3QokXYgWJ+UOVSDMju0taZk6v62+dnAaXph9+sK0WP2J33cpI1IgY+nKmW2fCi8bGixpwXq1klNl4KngAP6/v/+lH//VYn//TG8cHnIeWxftH1Qq0Nf8a+ka0Ps/VThjGf2s++M6eikJctj3rxUV0phd07RhrNAbxcDsWvG9nWudDOtezD8vivhbj/9maH5xcLx7p0E2MoEheDRQrz6FvRwLB9egHdHmnaGa9J4NKvRguJ/xrKUXHqI6yZoZnb4uSnI4lR2+H8bA8dgeRNgNuDVuXIICYz/GY49NhB9y0sfgVY4ZebDHaYcyAq7qjUVnGqdrzQU7HtdRrofFr8z+nY9EorCL+IZyR7saWf5TCept4rDY9UkFvoOlbftLpdpZcAmmz0nawDZNYTmH2Rc5cpiBL5X9+4+76p3NbN29YFS3349mtWDKRnQb6xZFpChL2ZW2ttcv2Sr94oarXyCMd9IotR0X34Z+N4lx7i8MP1b3EpNrzqkCWgg2S+iuhrwdSf3uboYCy6FCmgJYluQvNfJmHSFplYk+RvglPP27AOC58lY9+yea1XQT+SVv+Cg8d+NAlkRpMSZHyvk16/MSL+vKAg8EtUoDRchNkftn6e3tbQxZGSSZ6lNctfrUqe+LFS/Mj10njfnEN3sXa8JLKmhZ/74FokYqhI+cehSRjkLxwZ3sgc2YQjEUuK/b4RZeaJbEf5+rM5TrR/0HEcJpRQ1tmDZTNtRLcXrzlIkgjKF48/7w5MwpuwP6oFCNlJNvCgSWUekXiUE7qVJH30AEWAAA 1x, data:image/webp;base64,UklGRpwEAABXRUJQVlA4IJAEAACwEgCdASpQAFAAPpE2lkeloqIhL1auwLASCUAYC4CqAxZXxtwWx5f8B0cKYN/OWowL0ss0zyTvkybkIfI0iOXl2vrHnPZxL9Qx/TTaT/fBSL4UbUWIl5E+D3dEd1c1wcHCOC4hG0X9WK9FbIQj+IKkXbrbHiusKI3bfqm4pFhEhtDPNg1z8TvL4k3yrSbIa2o2g35bPj/MDXc1uXMceAD+7UEC7mYC3Kdt4HTkyADjJAdH/A0HAvSug9mzhf9Chom3n5U9aca9Ts+PPL8ud1A+77VKvsmcNDwDG0Ozjv2NrnLhUa0z8Xgv3RNc2d94yzJccphFCL03lS0Llchd6qiUfxtVuvfer+nO2Xd++fAbiqMukA1qPg6OI+X2Q+jrqiVwv3mGGI1Kg3dGP9SQOvy/FdrBif8eyz3zKf8QMHfu96ZskBFT/YXXEuTouyIOl+d/Gw0xJMpz9av0kFXMhgyRtgja/zjAl/rJTMeSj4NqreHiEUnJxHf1bJ6mjjuUCllpv0aSorGRySDSj3i49xuHlSTa6TWoGpZh8X3SKIqKHzpA6Ww/CE+l/pd+b66q8k2pTNKv7GOYGa86qhusnioVwVKl4N4uh/EQh9gvq1RrslplrCfq9Dkv5Qgic9T4cNSnK3tq32bmvHP0Kl5YpH7Ni55xxY5/V6agIAE9JFhXr+/Wp6pwJ/MxzS1DYdNfs0QEIu0u5d6Mz6JQeReTqm3TAlTabOo1vITUOf8lo/Nd1iKbZ9DMsBE+ks4SpC+gWvSPWOyBV7vPTQgIntEHi6QT3eApP+krEM5KpZJUIdp6s1Ytiewcq85XmV4gMGClzudm4zOjoEwFHR6MvjbiCgcIJ9JDK+HpbSeSo/fZdeEVOhfLoOOrZ5cnR2GYKlBbF489BkYLpGeER8BUURReWAXiDOC91QF+pFHM4YTxhmolXewr9tiafVQEP9T2UZjVyj2kd1RRTBcK1nvkbErZEgQjAMWtnJHSBuo7N+fxr5Hh8IZjncF3UN1OTRYZrA/ZIcZuipy3NE2rIMQgbO014N9zr6xNwyD/4On8+gMJGXq7aVbAyCdnKRcuzy2avhezyjAVPpy82rnzAMZdBVIuJuSuAoiKLguEPij3bF4DAAYxybPCSYoiaPFxljvljan0UCFD3RCrhUVuokENo6vQkJKSnrS2Wx1g6YnL6dhai5PDFTr4WvdK/vAN8EPMNgNlvWIij547X0RlNyXAFKolTCKa/VqO7UrKFwK/h42dHkvy0iggevpNdQL4at8ej56iXxhc3MtAkwmq0rIMbhtvar6k1ilJWJrJzDYNOj/sk9GNwuJsPf1rXo/u1Cw2FH01o3LOAZvLOEObE3Jcq9EDqVyn9RgmZFjrQ1eMLLrjQHoHr/o7+Lx/1DHWsZ4uL0KLESYVn7LU6l4aB0KSz7gTpu7KKz2NfJz3m22Xrta3yKzUuKy1LJFqA/d0hz867nenbHzASG92NijXQvvpx1jPpPLWiKZ3b/VgUkSWoEcpuLtdKZNsVfEyzPe9S5tEzRMb9l3tKxAv0bKNuW0SzB08zwAA 2x"
+          src="/veggieboost/assets/review1-ee6115ec.png"
+          alt="review 1"
+          width="40"
+          height="40"
+        />
+
+        <img
+          class="hero-reviews-photo2"
+          srcset="data:image/webp;base64,UklGRrgDAABXRUJQVlA4WAoAAAAQAAAAQQAAQQAAQUxQSC4BAAABkFTbbiRJH4IhCIIhJARDCCadDGwGDgZRTAxBEARBi5hs/Z6WETEBmC9bPYa6u+s4asmI/qnmr7WXQPLLfLJ2iSHdl3ZZl6ov77KomAfUbUWqHrSmaTI8rMqkrB5YZUo2D215gpgHt/xK1MOrvEjqhCM9q05ZH21OWh6Isli6605bb8SJ5aoz9Qtxajl1ru9JuQxAcfIP0NkaoGyG7PRS+LbG1w6+n8E3lE/9v6Hy6eAbB99P42sbXxG+DGNToLF14MNWABiXAsCXq5+ES07YmTouhUmu0Hg6bpOxqNyhsGx42jgaHqfBoOkZROOp4G22aCZ4ny2WZcwUjaQZc0XjDMHs1KK0hIWbRrCCtbKvawnLZV/TBSFl11n2FcQtu76z9kH0XNox9KTjaJtgPlZQOCBkAgAAcA0AnQEqQgBCAD6RNpdIJaKiIS4YvJCwEglAzgxwAej4u9yH5Sr6989F0Lx4UJ0t31tx4OuzTvy3K9t9TVpf8h3Q1Z2ZuOMfk1wBn+dnf+eSiV2e0wSEVcV9oarohx7HDyhN3HF8AGHPtGCv68HjMeHJdgAA/v72XI7U2yaEtFinQjTDN8y2zdZfQa/B7iiapWGx1lVgozpn7KsXyQTnFJd0HpLIGL/I+4qdqMcibe7x3M5RYOeadGS2Zo+t9//hfv/yQP//wi2elN70ZXGBTWyhxb3c51qNbqpVk4BJTqdCQ5HxfacQ8kyyHr8p3K+knN8tMKZpU0yh/BjXbzhvg51lxfT7CFbx0v6bJFxtaAia6houpEPiSEjzSw0gjh+JJ0nDvPPKg11nLrpixTKh5z4K1+UPZcE6/pd71x5pBDvL/t08tR4XcxQ1kgvWS7DIo6AD54QE1K6LReu7pLxb/S+mLkVACKgeaimC2NJGvwaLW2IE41yejH5Z+cHvzxMOj+XR6LUVq2r1+YHUwAI2J8rmwMTp/ojAzLufEq6kFy1auY2WTtjRTCgITU9lpTAAp3le0cvy0srACT2PwD6x1qqNGNiAesQik+RIi0QMMDcDEI74zJ4zBkmCEs5t/8Tzv+Qdo8sOnHJPRCy8q+PZQ+fM995HOvhXEfWv0/TRyFiCKwRQuOwBnes/slMPemKJOXym9e865GbVXXUuLCmssXWv6l5qkU+6L3CAa3d22uNM4oo/MadssYgrT8lfnJK0TwZupFFPmsO5lWcH4i8hNdAp+F3wWiA4Qbn8f94G5uC1gAAA 1x, data:image/webp;base64,UklGRr4EAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSH0BAAABkFZtb91IHwRBEJRAMAQzmDCoGTQMXAaBYAiG8EEQBM3s9uLY2svPiJgAXC1pr410d7featkEC0u60weyJlljO83H1zSd3MwvZtaZ5GY+IW/zZPqkzHNo84lPneDLfGrLV8ndp79fo90X7HqB0pekDlP6otRBSl+WOkTpC1NHdF+6y2d3X/z+Ufbl9w/U1jN97/QA21vZQ8zvMAbKq5sHWV4oozB5lj3M8oxx2JPkgW6/1UhOAOKRmgApFE9AjeUAGAshHqxs0aQSzf6IprZoWo+GFo7/92U0Fk5v0bRHNHWPpqRoNolGwFgIHLFUIMWSALFQBMAZSQWALZL0GywO4mmJIz8Ti4L6DCWKgpfCGIg3cwz5HbQITryttp7pe9jXy/j0WO3Ax9LX6hioXIk6Asp1qBirXIWK0co1qBivfYWuuPSY7xBcnG0u23G9njM1xZSZszBj2sIZrAgm1syrrAhmT48L7NywpKQHR/BIgoVlK7V1+41sdU+CqwEAVlA4IBoDAABwEQCdASpQAFAAPpE8mEglo6KhLNM92LASCUAXmwTRxB6nyNwjz3TwT/oAgvi5Nuj4Sx0g30tM/779cz/9AXmfZ16hLRemRLyPHOLLQqU+mgRgiMKb5cYhX9f1EgZYPjh3vcgFt5oiza9zRjj5xOJ8rThRjc7pAsjhETD6uqNxKeyBuGBR3eIxDpUbeXsHOLFAFlQAAP5nWWjFoRyw89rQbdPEtvHXe2B7cdcmjRBCVDuOF21IeGeeXbPKvhVzEjAU+C9bWmLJ26N5/w3lvw5sGtKW2P3JqZ0E6DBcIapbUDFFGG+JD1IZN6TD+57RuB0auaqyLuTQkvwgURRYV56lrwHgPMjM/AY8b03tBLjTO3al8qGb8MXdjofMr9QkNxxyqwD3WZQK3AGM/f2a92lMetMY9fGCJ0VywbNfYrh7je6FZQzz7JQfgDIf/QkXSJ/LkX8dR5SOHo8PQYh/aI7FUkbWzQEQa2A/r+m2lh3KPMcHaXfrZemgyqwMfWqYuFx+kuB4JtLbdfN/VVqQ9CK0d+ffdq8yjpcfr7NedPIS79GerNgmNT7vezaTr/XJdskus4Jzfp3m1cyvWtPGzdLs5pNYw10LX1GRs1Y+eBX9Qh1h9moQ1M1R2kTQ14wtnFFqlgJ7vbZeMFuCYfP/reehx5LCLQRLmupDE+wZAZe4hum/EgJLb3QBoVApE9wNr+jtBnnBqeCuVSa2EMHasdPp4U6XT6T30II8k9FyYbWBcnJ9sgzkR7u5Kgc+MAMsmlvIJDguXqXsIVsGHq8jWRQraqPbcBUKJrRZvnvK644K/9BuQZnhxeDKf+nZpVhZdHFZCMOdxEAAqvJE5Xmue3VollpeYgMR/PZCLbZRUBR6tl3r4Oq5iPYsFPKum28OvWa0ZeB0QM6878Ma8eeK9N+7fEaaTW4bdhAn7qml0cWnNvdKfRAx9fEegnZKldAetu/85zgR/NvBcSAlPHqicsExtfTjj60u4I9bsWmfnEFTt/bSfQptU2zRa8tIeSNNw12VI72DX/Y4Au9x7CJO5b7RuN7Uuf/D0AAAAA== 2x"
+          src="/veggieboost/assets/review2-181aade4.png"
+          alt="review 1"
+          width="40"
+          height="40"
+        />
+        <img
+          class="hero-reviews-photo3"
+          srcset="data:image/webp;base64,UklGRmIEAABXRUJQVlA4WAoAAAAQAAAAQQAAQQAAQUxQSC4BAAABkFTbbiRJH4IhCIIhJARDCCadDGwGDgZRTAxBEARBi5hs/Z6WETEBmC9bPYa6u+s4asmI/qnmr7WXQPLLfLJ2iSHdl3ZZl6ov77KomAfUbUWqHrSmaTI8rMqkrB5YZUo2D215gpgHt/xK1MOrvEjqhCM9q05ZH21OWh6Isli6605bb8SJ5aoz9Qtxajl1ru9JuQxAcfIP0NkaoGyG7PRS+LbG1w6+n8E3lE/9v6Hy6eAbB99P42sbXxG+DGNToLF14MNWABiXAsCXq5+ES07YmTouhUmu0Hg6bpOxqNyhsGx42jgaHqfBoOkZROOp4G22aCZ4ny2WZcwUjaQZc0XjDMHs1KK0hIWbRrCCtbKvawnLZV/TBSFl11n2FcQtu76z9kH0XNox9KTjaJtgPlZQOCAOAwAA0A4AnQEqQgBCAD6RPJhIJaOioSzYDECwEglAGL+TElgv6K6D7cAc8tZPqN+nLKxzvwv9EfOgsrFBE1S73lj9RnH2cLOZ9VXI45y7lPBEhR3sAe5Nnw5Y8CIk7g4pB4o+2Erd2hH3IX9EF6WIjJgbKeAOObNHRdld0YMBSCCUAAD+kz//bsf/3L3//7gI5dzMBsmi0As62qSZL8o7VJO2uGea6/bQim4y2xWC3qpbet3p8SObjTKuulEsF6Ebz3gZypML7QjIn/Y5bBQbgaZHMgF7GO19OAAgEhCp1LQzL5EU+yV3qvhrjMIrmdfMEIi1rM0Oha17//3AD/95I///bvyp/0MCuyZejjth7ZLX/HL3z++3H2apip7mzeuRLQoPv6kL9wNb+r53u9bv5lqeofh2XcJ7Ez8YPjvsafq8rPRHBEHvPLz1EtBBIRp1ISlkXy9Ncp/Rb3jNh4gMi5zQuofRCv9BcALm7RfSMPw9dh12xaDEPQv2ndLRm7RLyhkbkTTPKgqyd4gqkdXtnYNsKfORfwaJvBD9rwCatcdz/BoKwV587DTvFW+oCOUEZkqlTX/e9wqj+5OwOWdFx7/oF6SNfgO+Vc40HBqkOm/6lnrsriTWlzA34B/DOxMTGtUknxGjAz/IWxsNEpXS6UiOzJn7Wtc6bv1zHUfe8IWlp3qzSVB8AHgIo4/kZpzSKjbqGUikqLwjzSJPOLkDNlkP0NvK1OKmnNBlUchhtnbYAACS53js1jSHzDB3oSqeQDuquRrKBImXyZKBTlxQRn9j0G+YjB9uHC/8kB3rERnEef/nd9HifzJuNIAsqe4QMFsgGQYcMhf2bY5nDXzHXFpafAMvfrrC2yiDTn7VdfzmhbuR6l5xht2/KVon2mHZbLiMK8x6zhrNHKirkfd8S1qKWkKUMec48slow5B7eCPe7XkI6k8cB7JLBhX1J6ns+Pgk4P+Pldxkg2eZAp87cE/9CCVvM/f0aRPHnuvlKa7SLA+YTN+SYT0rfjcgprzjfwl5j1o8NMb/rd5UMCAAAAA= 1x, data:image/webp;base64,UklGRkQFAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSH0BAAABkFZtb91IHwRBEJRAMAQzmDCoGTQMXAaBYAiG8EEQBM3s9uLY2svPiJgAXC1pr410d7featkEC0u60weyJlljO83H1zSd3MwvZtaZ5GY+IW/zZPqkzHNo84lPneDLfGrLV8ndp79fo90X7HqB0pekDlP6otRBSl+WOkTpC1NHdF+6y2d3X/z+Ufbl9w/U1jN97/QA21vZQ8zvMAbKq5sHWV4oozB5lj3M8oxx2JPkgW6/1UhOAOKRmgApFE9AjeUAGAshHqxs0aQSzf6IprZoWo+GFo7/92U0Fk5v0bRHNHWPpqRoNolGwFgIHLFUIMWSALFQBMAZSQWALZL0GywO4mmJIz8Ti4L6DCWKgpfCGIg3cwz5HbQITryttp7pe9jXy/j0WO3Ax9LX6hioXIk6Asp1qBirXIWK0co1qBivfYWuuPSY7xBcnG0u23G9njM1xZSZszBj2sIZrAgm1syrrAhmT48L7NywpKQHR/BIgoVlK7V1+41sdU+CqwEAVlA4IKADAADwEQCdASpQAFAAPok4mEelI6KhL1QOwKARCUAXyAVp9RA3t9vNzxDGd7P5cvCnTDNIIlHy66WyVQ5VhpLNJyN3MHEscn8HmNszpOErVui/0X1c45+PyE2hfZ8ZAcQ8/f2xTYo32ds/3Cb6CMk+Ku1GHAzvyDwzz3uptlPs+8DM9iu6jf61WjSjizeu+IXm0CcgsGpef/6jAAD+/syy3/lKRbIwflwk/1ENRIXdV2QA9dfhY3yRclKVzfKlliFGBODD4XXT/QScmRxBMeOXb+UI0917BsB3CB1kZDn/0vtwWqbxolMbbWH5DsTPnHNNJ6FGK+iD9Y0q6mLItEOe3cnmdQnjWiSfQ8bTl5mBNMZjfjMf/90c//dRL//ujw15VINwDp/5LlnIKwZPfIOtm7S92nMWcObGyHtXHXEf3ookzDzgyVVJwEjlWk4oZr3rcucVwuxNczrNi0S19lNCBh6Ys4s3NHHDEsbE7D0r0LFVhxly+UxBa4iWf8oCCdiMpqaDjcpuGGnzmDFYjJVr/ZenQhn5q/4sqhRCvLX678CoDF00H7QuQuKOHvWZjzHylekjt2N51Xpnb0X7a9+d584JxBH+m0AeWjASBeoHzBg/G2XYVcpJ7ZIxKwill7g5uAdT9yyYtdyAHcJjvKvCVWjm7O5rUOC8Gu28ZomLiwhpOcZnGUb09tyArwX85IpEym3gQyJsdOLLNmmQAwz2g32lJit8pUnrijvngZysrhnfIwn0NgPJ44yUyQ4qjP0UnBUKpZa1OHFtnMKb0vUatLBT77Ud+EljxoQugahqyjIDcV3kAi496AxK8tIs1m7aKYzaXlp/AXhiYPHh5At2Ije6Qo6DOjbSZIJLwPUpDNQmObAqsqxV0dhlZWgA5HjiBR9Zt3xZa13de6DWPjwRWXfTykisusPyV/toTtcmbvtO9ALCkeMO3rua//iMqg1x2WPs36dazu5Myh3wtCfpYM4njNc/AwzgBYeg9kP5K7MDs6Unfp/lGv3v9aew1g3MLvMljEwAnKPW+P/nM/iWvcmpzsHPX55RQH4zxyEH4VsskM6XOQU+MgdMdQU/3/ob4MxYlZFCMjpsJwTUBvqkD9UrIBVEiwGX3c21DUis17K3+X2UC+b6YUVq/qCOgAS3BHrbhWParwg05BBguPnx4+jw14BYVOzu7Ns6eIkOcC+JP8pD9pIYQAHUABWkndUbvCVoicJN/85l16OCm3clOAAA 2x"
+          src="/veggieboost/assets/review3-b01b7128.png"
+          alt="review 1"
+          width="40"
+          height="40"
+        />
+        <div class="hero-reviews-tex">
+          <p class="hero-reviews-p1">2k</p>
+          <p class="hero-reviews-p2">reviews</p>
+        </div>
+      </div>
+      <h1 class="hero-header">
+        organic <span>vegetables</span> to your diet today!
+      </h1>
+      <p class="hero-tex">
+        Our expertly curated vegetable baskets are made with the freshest,
+        highest quality vegetables available. Fresh Harvest Box has got you
+        covered. Fresh, high-quality vegetables in expertly curated vegetable
+        baskets delivered to you.
+      </p>
+      <button type="button" class="hero-btn" data-modal-open>shop now</button>
+    </div>
+    <div class="hero-second-wrapper">
+      <img
+        class="hero-photo-img"
+        srcset="/veggieboost/assets/hero-main-photo-e5e2b893.png 1x, /veggieboost/assets/hero-main-photo-2x-e0cbc2d5.webp 2x"
+        src="/veggieboost/assets/hero-main-photo-e5e2b893.png"
+        alt="girl with vegetable"
+        width="278"
+        height="228"
+      />
+      <div class="hero-tegs-wrapper">
+        <ul class="hero-list hero-list-first">
+          <li class="hero-list-item-first">#organic</li>
+          <li class="hero-list-item">#products</li>
+        </ul>
+        <ul class="hero-list">
+          <li class="hero-list-item">#basket</li>
+          <li class="hero-list-item">#vegetables</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!--Yurii-->
+      <section id="first-section" class="first-section section">
+  <div class="container vegetable-container">
+    <div class="vegetable-left">
+      <h2 class="order-caption">
+        To order your vegetable basket, simply follow these easy steps
+      </h2>
+      <img
+        class="order-img-desk"
+        srcset="/veggieboost/assets/desktop-vegetables-1x-min-79771ae2.jpg 1x, /veggieboost/assets/desktop-vegetables-2x-min-7ed43beb.jpg 2x"
+        src="/veggieboost/assets/desktop-vegetables-1x-min-79771ae2.jpg"
+        alt="vegetables"
+      />
+      <img
+        class="order-img-mob"
+        srcset="/veggieboost/assets/mob-vegetables-1x-min-e07e8c47.jpg 1x, /veggieboost/assets/mob-vegetables-2x-min-b40423b0.jpg 2x"
+        src="/veggieboost/assets/tablet-vegetables-min-325afe04.jpg"
+        alt="vegetables"
+      />
+      <img
+        class="order-img-tabl"
+        srcset="/veggieboost/assets/tablet-vegetables-min-325afe04.jpg 1x, /veggieboost/assets/tablet-vegetables-2x-min-202bb1f8.jpg 2x"
+        src="/veggieboost/assets/tablet-vegetables-min-325afe04.jpg"
+        alt="vegetables"
+      />
+    </div>
+    <div class="vegetable-right">
+      <p class="order-text order-text-left">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home.
+      </p>
+      <p class="order-text">
+        Whether you're looking for a healthy snack or a thoughtful gift, our
+        fruit baskets are the perfect choice.
+      </p>
+    </div>
+  </div>
+</section>
+
+     
+      <!--Oleh-->
+      <section class="section-instruction section" id="instruction">
+  <div class="container">
+    <div class="instruction-container">
+      <div class="img-container instruction-img">
+        <img
+          class="red-girl"
+          srcset="/veggieboost/assets/red-cap-girl-58801881.webp 1x, /veggieboost/assets/red-cap-girl-2x-7883d77e.webp 2x"
+          src="/veggieboost/assets/red-cap-girl-a6f6e76c.png"
+          alt="girl"
+          width="350px"
+          height="420px"
+        />
+      </div>
+      <div class="instruction-text">
+        <h3 class="instruction-title">
+          3 Easy Steps for Buying Fresh Vegetables
+        </h3>
+        <ol class="instruction-list list" role="list">
+          <li class="instruction-item" data-number="1">
+            Just choose the vegetable you want to order by clicking on the
+            checkboxes next to it.
+          </li>
+          <li class="instruction-item" data-number="2">
+            Click on the basket and fill<br />
+            out the form.
+          </li>
+          <li class="instruction-item" data-number="3">
+            Sit back and relax! Your fresh vegetables basket will be delivered.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!--Andrii S-->
+      <section id="section-garden" class="section-garden">
+  <div class="garden-container container">
+    <div class="garden-cap">
+      <h2 class="garden-title">oRGANIC vegetables</h2>
+      <p class="garden-text">
+        Our organic vegetables are hand-picked from local farms and delivered
+        straight to your doorstep, ensuring that you get the freshest and most
+        nutritious produce possible.
+      </p>
+    </div>
+    <ul class="garden-menu list">
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Carrot</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/carrot-66b97d59.webp 1x, /veggieboost/assets/carrotx-fb3c2a81.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/carrot-4090b72f.png 1x, /veggieboost/assets/carrotx-d85bcf24.png 2x" />
+              <img
+                src="/veggieboost/assets/carrot-4090b72f.png"
+                alt="vegetables carrot"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">100 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Brussel sprouts</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/brussel-42372ff8.webp 1x, /veggieboost/assets/brusselx-99c0688a.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/brussel-fd1f33cb.png 1x, /veggieboost/assets/brusselx-09702fc4.png 2x" />
+              <img
+                src="/veggieboost/assets/brussel-fd1f33cb.png"
+                alt="vegetables brussel sprouts"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">80 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Tomato</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/tomato-b85a567f.webp 1x, /veggieboost/assets/tomatox-7a890a20.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/tomato-38346a26.png 1x, /veggieboost/assets/tomatox-fdac5427.png 2x" />
+              <img
+                src="/veggieboost/assets/tomato-38346a26.png"
+                alt="vegetables tomato"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">40 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Eggplant</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/eggplant-9e0b1b83.webp 1x, /veggieboost/assets/eggplantx-727f0a8f.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/eggplant-47ccff47.png 1x, /veggieboost/assets/eggplantx-e2f21129.png 2x" />
+              <img
+                src="/veggieboost/assets/eggplant-47ccff47.png"
+                alt="vegetables eggplant"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">60 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Sweet potatoes</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/potatoes-d0bacf58.webp 1x, /veggieboost/assets/potatoesx-425f7a53.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/potatoes-a426a9e8.png 1x, /veggieboost/assets/potatoesx-8511e7fc.png 2x" />
+              <img
+                src="/veggieboost/assets/potatoes-a426a9e8.png"
+                alt="vegetables sweet potatoes"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">80 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Leek</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/leek-b5a1f518.webp 1x, /veggieboost/assets/leekx-f896d190.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/leek-8a45da02.png 1x, /veggieboost/assets/leekx-a27c9d72.png 2x" />
+              <img
+                src="/veggieboost/assets/leek-8a45da02.png"
+                alt="vegetables leek"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">50 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Mushrooms</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/mushrooms-e9475c8f.webp 1x, /veggieboost/assets/mushromsx-5e8815cc.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/mushrooms-682d1107.png 1x, /veggieboost/assets/mushromsx-4e104a95.png 2x" />
+              <img
+                src="/veggieboost/assets/mushrooms-682d1107.png"
+                alt="vegetables mushrooms"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">40 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Corn</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/corn-b9f226b6.webp 1x, /veggieboost/assets/cornx-4cfb493b.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/corn-095562a2.png 1x, /veggieboost/assets/cornx-ec8011ca.png 2x" />
+              <img
+                src="/veggieboost/assets/corn-095562a2.png"
+                alt="vegetables corn"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">60 UAH / kg</p>
+      </li>
+      <li class="garden-list">
+        <div class="garden-item">
+          <div class="garden-item-cup">
+            <h3 class="garden-subtitle">Radish</h3>
+            <p class="garden-list-text">Plant</p>
+          </div>
+          <div class="garden-img">
+            <picture class="garden-images"
+              ><source
+                srcset="/veggieboost/assets/radish-5c10cfdc.webp 1x, /veggieboost/assets/radishx-88d2e09f.webp 2x"
+                type="image/webp" />
+
+              <source
+                srcset="/veggieboost/assets/radish-1378b085.png 1x, /veggieboost/assets/radishx-eab6b488.png 2x" />
+              <img
+                src="/veggieboost/assets/radish-1378b085.png"
+                alt="vegetables radish"
+                width="299"
+                height="249"
+            /></picture>
+          </div>
+        </div>
+        <p class="garden-price">90 UAH / kg</p>
+      </li>
+    </ul>
+  </div>
+  <div class="garden-btn-container container">
+    <button type="button" class="garden-btn" data-modal3-open>
+      <svg class="garden-btn-icon" width="14" height="14">
+        <use href="/veggieboost/assets/icons-5a84b130.svg#icon-order"></use>
+      </svg>
+      Order
+    </button>
+  </div>
+</section>
+
+
+      <!--Diana-->
+      <section class="section rec-section">
+  <div class="container recall-loc">
+    <div class="recall-desc">
+      <h2 class="recall-tittle">Fresh Harvest Box has got you covered</h2>
+      <p class="recall-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+      <div class="recall-line">
+        <form class="recall-form">
+          <label class="recall-label">
+            <input class="recall-input" name="text" type="text" placeholder="+380 ()"
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13" maxlength="13" required>
+          </label>
+          <button class="recall-btn" type="submit">Recall</button>
+        </form>
+      </div>
+    </div>
+    <div class="recall-img">
+      <picture>
+        <source srcset="/veggieboost/assets/img-girl-desc-min-a81b9504.png 1x, /veggieboost/assets/img-girl-desc-9dd2fce7.png 2x" media="(min-width: 1280px)">
+        <source srcset="/veggieboost/assets/img-girl-tabl-min-4788e402.png 1x, /veggieboost/assets/img-girl-tabl-d0ff8636.png 2x" media="(min-width: 768px)">
+        <source srcset="/veggieboost/assets/img-girl-mob-min-ae8e478f.png 1x, /veggieboost/assets/img-girl-mob-60e45eb9.png 2x" media="(max-width: 375px)">
+        <img src="/veggieboost/assets/img-girl-mob-min-ae8e478f.png" alt="girl">
+      </picture>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+      <!--Andrey-->
+      <footer id="footer">
+  <div class="footer-cont container">
+    <div class="footer-imglogo">
+      <img
+        srcset="/veggieboost/assets/vegetablesx1-9795cb2e.webp 1x, /veggieboost/assets/vegetablesx1-9795cb2e.webp 2x"
+        alt="broccoli"
+        src="/veggieboost/assets/vegetablesx1-d4d3c9e0.jpg"
+        width="335"
+        height="172"
+      />
+      <div class="footer-logo">
+        <a href="./index.html" class="footer-logo-link">
+          <svg class="footer-svg">
+            <use href="/veggieboost/assets/icons-5a84b130.svg#icon-logo" width="16" height="16"></use>
+          </svg>
+          <p>veggieboost</p>
+        </a>
+      </div>
+    </div>
+    <div class="footer-menu">
+      <ul class="foot-ul">
+        <li class="foot-li">
+          <a href="#instruction" class="foot-menu-text">How It Works</a>
+        </li>
+        <li class="foot-li">
+          <a href="#section-garden" class="foot-menu-text">Vegetables</a>
+        </li>
+        <li class="foot-li">
+          <a href="#footer" class="foot-menu-text">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-div-two">
+      <div class="footer-socials">
+        <ul class="foot-soc-ul">
+          <li class="foot-soc-li">
+            <a
+              class="foot-soc-link"
+              href="https://www.facebook.com/"
+              aria-label=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="foot-soc-icon" width="24" height="24">
+                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="foot-soc-li">
+            <a
+              class="foot-soc-link"
+              href="https://www.instagram.com/"
+              aria-label=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="foot-soc-icon" width="24" height="24">
+                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="foot-soc-li">
+            <a
+              class="foot-soc-link"
+              href="https://www.youtube.com/"
+              aria-label=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="foot-soc-icon" width="24" height="24">
+                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <address>
+        <a href="tel:+380684439426" class="contacts">+380 (68) 443-94-26</a>
+        <a
+          href="https://goo.gl/maps/hRzey5vdSYHuPue78"
+          target="_blank"
+          class="foot-address"
+        >
+          1678 S. Pioneer Road<br />
+          Salt Lake City<br />
+          UT 84104
+        </a>
+      </address>
+    </div>
+  </div>
+</footer>
+
+
+      <!--Serhiy M-->
+      <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+            <svg class="modal_christ" width="" height="">
+                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="modalp">Your Order</p>
+        <ul class="modal-div">
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Cabbage Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/cabbage-mobile-4dd74620.png 1x, /veggieboost/assets/cabbage-tab-b607e209.png 2x"
+                    src="/veggieboost/assets/cabbage-32106d5f.png" alt="cabbage" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods1" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods1" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Tomato Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/tomato-mobile-c3007345.png 1x, /veggieboost/assets/tomato-tab-9154f962.png 2x"
+                    src="/veggieboost/assets/tomato-99b137e3.png" alt="tomato" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods2" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods2" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Vegetables Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img"
+                    srcset="/veggieboost/assets/vegetables-basket-mobile-4e8eb631.png 1x, /veggieboost/assets/vegetables-basket-tab-4cfd0730.png 2x"
+                    src="/veggieboost/assets/vegetables-fee96a00.png" alt="vegetables" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods3" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods3" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <div class="modal-div-anket">
+            <form class="modal-form">
+
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" class="modal_icon" name="user-name" id="user-name"
+                            placeholder="Enter full name..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="email" class="modal_icon" name="email" id="mailto" placeholder="Enter email..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" id="card__number" class="modal_icon" placeholder="Enter card.."
+                            pattern="[0-9]{14,23}" name="cardnumber">
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <textarea class="modal_text" name="user-comment" id="user-comment" cols="200" rows="450"
+                        placeholder="Enter comments..."></textarea>
+                </div>
+
+                <button type="submit" class="modal-buttom" data-modal-open="">Submit</button>
+            </form>
+            <div class="modal-girl-desk"></div>
+            <div class="modal-girl-tab"></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="backdrop is-hidden" data-modal1>
+    <div class="modal">
+        <button type="button" class="modal-btn" data-modal1-close>
+            <svg class="modal_christ" width="" height="">
+                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="modalp">Your Order</p>
+        <ul class="modal-div">
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Cabbage Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/cabbage-mobile-4dd74620.png 1x, /veggieboost/assets/cabbage-tab-b607e209.png 2x"
+                    src="/veggieboost/assets/cabbage-32106d5f.png" alt="cabbage" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods4" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods4" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Tomato Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/tomato-mobile-c3007345.png 1x, /veggieboost/assets/tomato-tab-9154f962.png 2x"
+                    src="/veggieboost/assets/tomato-99b137e3.png" alt="tomato" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods5" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods5" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Vegetables Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img"
+                    srcset="/veggieboost/assets/vegetables-basket-mobile-4e8eb631.png 1x, /veggieboost/assets/vegetables-basket-tab-4cfd0730.png 2x"
+                    src="/veggieboost/assets/vegetables-fee96a00.png" alt="vegetables" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods6" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods6" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <div class="modal-div-anket">
+            <form class="modal-form">
+
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" class="modal_icon" name="user-name" id="user-name1"
+                            placeholder="Enter full name..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="email" class="modal_icon" name="email" id="mailto1" placeholder="Enter email..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" id="card__number1" class="modal_icon" placeholder="Enter card.."
+                            pattern="[0-9]{14,23}" name="cardnumber">
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <textarea class="modal_text" name="user-comment" id="user-comment1" cols="200" rows="450"
+                        placeholder="Enter comments..."></textarea>
+                </div>
+
+                <button type="submit" class="modal-buttom" data-modal1-open="">Submit</button>
+            </form>
+            <div class="modal-girl-desk"></div>
+            <div class="modal-girl-tab"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="backdrop is-hidden" data-modal2>
+    <div class="modal">
+        <button type="button" class="modal-btn" data-modal2-close>
+            <svg class="modal_christ" width="" height="">
+                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="modalp">Your Order</p>
+        <ul class="modal-div">
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Cabbage Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/cabbage-mobile-4dd74620.png 1x, /veggieboost/assets/cabbage-tab-b607e209.png 2x"
+                    src="/veggieboost/assets/cabbage-32106d5f.png" alt="cabbage" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods7" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods7" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Tomato Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/tomato-mobile-c3007345.png 1x, /veggieboost/assets/tomato-tab-9154f962.png 2x"
+                    src="/veggieboost/assets/tomato-99b137e3.png" alt="tomato" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods8" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods8" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Vegetables Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img"
+                    srcset="/veggieboost/assets/vegetables-basket-mobile-4e8eb631.png 1x, /veggieboost/assets/vegetables-basket-tab-4cfd0730.png 2x"
+                    src="/veggieboost/assets/vegetables-fee96a00.png" alt="vegetables" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods9" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods9" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <div class="modal-div-anket">
+            <form class="modal-form">
+
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" class="modal_icon" name="user-name" id="user-name2"
+                            placeholder="Enter full name..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="email" class="modal_icon" name="email" id="mailto2" placeholder="Enter email..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" id="card__number2" class="modal_icon" placeholder="Enter card.."
+                            pattern="[0-9]{14,23}" name="cardnumber">
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <textarea class="modal_text" name="user-comment" id="user-comment2" cols="200" rows="450"
+                        placeholder="Enter comments..."></textarea>
+                </div>
+
+                <button type="submit" class="modal-buttom" data-modal2-open="">Submit</button>
+            </form>
+            <div class="modal-girl-desk"></div>
+            <div class="modal-girl-tab"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="backdrop is-hidden" data-modal3>
+    <div class="modal">
+        <button type="button" class="modal-btn" data-modal3-close>
+            <svg class="modal_christ" width="" height="">
+                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="modalp">Your Order</p>
+        <ul class="modal-div">
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Cabbage Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/cabbage-mobile-4dd74620.png 1x, /veggieboost/assets/cabbage-tab-b607e209.png 2x"
+                    src="/veggieboost/assets/cabbage-32106d5f.png" alt="cabbage" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods10" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods10" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Tomato Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img" srcset="/veggieboost/assets/tomato-mobile-c3007345.png 1x, /veggieboost/assets/tomato-tab-9154f962.png 2x"
+                    src="/veggieboost/assets/tomato-99b137e3.png" alt="tomato" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods11" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods11" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+            <li class="modal-li">
+                <div class="modal-li-check">
+                    <h5 class="modal-h5">Vegetables Basket</h5>
+                    <p class="modal-p">Plant</p>
+                </div>
+                <img class="modal-img"
+                    srcset="/veggieboost/assets/vegetables-basket-mobile-4e8eb631.png 1x, /veggieboost/assets/vegetables-basket-tab-4cfd0730.png 2x"
+                    src="/veggieboost/assets/vegetables-fee96a00.png" alt="vegetables" width="94" height="78" />
+                <div class="modal-chek">
+                    <input type="checkbox" name="user-privacy" id="goods12" value="true"
+                        class="modal-input-check modal-visually-hidden">
+                    <label for="goods12" class="modal-check-text">
+                        <span class="modal-span">
+                            <svg class="" width="10" height="8">
+                                <use href="/veggieboost/assets/icons-5a84b130.svg#icon-checkbox-pick"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <div class="modal-div-anket">
+            <form class="modal-form">
+
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" class="modal_icon" name="user-name" id="user-name3"
+                            placeholder="Enter full name..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="email" class="modal_icon" name="email" id="mailto3" placeholder="Enter email..." />
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <div class="modal-inputdiv-icon">
+                        <input type="text" id="card__number3" class="modal_icon" placeholder="Enter card.."
+                            pattern="[0-9]{14,23}" name="cardnumber">
+                    </div>
+                </div>
+                <div class="modal-input-div">
+                    <textarea class="modal_text" name="user-comment" id="user-comment3" cols="200" rows="450"
+                        placeholder="Enter comments..."></textarea>
+                </div>
+
+                <button type="submit" class="modal-buttom" data-modal3-open="">Submit</button>
+            </form>
+            <div class="modal-girl-desk"></div>
+            <div class="modal-girl-tab"></div>
+
+        </div>
+    </div>
+</div>
+
+    
+
+
+    
+  </body>
+</html>
